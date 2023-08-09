@@ -1,0 +1,91 @@
+name: "Make artifacts"
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    paths:
+      - 'pcb_main/*.kicad_sch'
+      - 'pcb_main/*.kicad_pcb'
+      - 'config/*'
+      - '.github/workflows/workflow.yml'
+  pull_request:
+    paths:
+      - 'pcb_main/*.kicad_sch'
+      - 'pcb_main/*.kicad_pcb'
+      - 'config/*'
+      - '.github/workflows/workflow.yml'
+  repository_dispatch:
+    types: [run_qs]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  Fabrication:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    # This is a KiCad 5 example, KiCad 6 uses v2_k6
+    - uses: INTI-CMNB/KiBot@v2_k7
+      with:
+        # Required - kibot config file
+        config: config/settings.yml
+        # optional - prefix to output defined in config
+        dir: pcb_main/Fabrication
+        # optional - schematic file
+        schema: 'pcb_main/GreenBean.kicad_sch'
+        # optional - PCB design file
+        board: 'pcb_main/GreenBean.kicad_pcb'
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: Automatic_outputs
+        path: |
+          pcb_main/Fabrication
+        if-no-files-found: warn
+
+
+
+  # quick:
+  #   runs-on: ubuntu-latest
+  #   container: ghcr.io/inti-cmnb/kicad7_auto_full:latest
+  #
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #     with:
+  #       # So we can run a diff between last 2 changes
+  #       fetch-depth: '0'
+  #
+  #   - name: Quick Start
+  #     run: |
+  #       kibot --quick-start
+  #   - name: Retrieve results
+  #     uses: actions/upload-artifact@v2
+  #     with:
+  #       name: Automatic_outputs
+  #       path: Generated
+
+  # This step is to upload the results to another repo (web pages)
+  deploy:
+    runs-on: ubuntu-latest
+    needs: Fabrication
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Retrieve results
+      uses: actions/download-artifact@v2
+      with:
+        name: Automatic_outputs
+        path: pcb_main/Fabrication
+
+    - name: Deploy navigate results
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+        branch: main
+        folder: pcb_main/Fabrication
+        target-folder: outputs
+        repository-name: vattern/pedal-template
+        token: ${{ secrets.TOKEN }}
