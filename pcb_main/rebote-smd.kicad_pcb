@@ -85,6 +85,8 @@
     )
   )
 
+  (property "GIT_VERSION" "v0.0.1")
+
   (net 0 "")
   (net 1 "GND")
   (net 2 "+9V")
@@ -23624,7 +23626,7 @@
       )
     )
   )
-  (gr_text "TKW 2023 rev 0.1" (at 122.01 96.05 90) (layer "F.SilkS") (tstamp e1fcdd61-330a-4997-93ce-46bfa589c6d3)
+  (gr_text "TKW 2023 rev ${GIT_VERSION}" (at 122.01 96.05 90) (layer "F.SilkS") (tstamp e1fcdd61-330a-4997-93ce-46bfa589c6d3)
     (effects (font (size 1 1) (thickness 0.15) italic) (justify left bottom))
   )
   (dimension (type aligned) (layer "Dwgs.User") (tstamp 300b57cf-7f06-4e44-93f3-34f368d0e43d)
