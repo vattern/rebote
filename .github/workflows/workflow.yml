@@ -41,7 +41,7 @@ jobs:
       with:
         version: ${{ steps.previoustag.outputs.tag }}
 
-    - name: Find and Replace
+    - name: Find and Replace Project file
       uses: jacobtomlinson/gha-find-replace@v3
       with:
         find: "\"GIT_VERSION\": \"${{ steps.previoustag.outputs.tag }}\""
@@ -49,7 +49,7 @@ jobs:
         regex: false
         include: "**kicad_pro"
 
-    - name: Find and Replace
+    - name: Find and Replace PCB file
       uses: jacobtomlinson/gha-find-replace@v3
       with:
         find: "\"GIT_VERSION\" \"${{ steps.previoustag.outputs.tag }}\""
@@ -79,6 +79,7 @@ jobs:
 
     # This is a KiCad 5 example, KiCad 6 uses v2_k6
     - uses: INTI-CMNB/KiBot@v2_k7
+      name: Run KiBOT
       with:
         # Required - kibot config file
         config: config/settings.yml
@@ -97,27 +98,6 @@ jobs:
         path: |
           pcb_main/Fabrication
         if-no-files-found: warn
-
-
-
-  # quick:
-  #   runs-on: ubuntu-latest
-  #   container: ghcr.io/inti-cmnb/kicad7_auto_full:latest
-  #
-  #   steps:
-  #   - uses: actions/checkout@v3
-  #     with:
-  #       # So we can run a diff between last 2 changes
-  #       fetch-depth: '0'
-  #
-  #   - name: Quick Start
-  #     run: |
-  #       kibot --quick-start
-  #   - name: Retrieve results
-  #     uses: actions/upload-artifact@v2
-  #     with:
-  #       name: Automatic_outputs
-  #       path: Generated
 
   # This step is to upload the results to another repo (web pages)
   deploy:
