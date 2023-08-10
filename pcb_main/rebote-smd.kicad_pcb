@@ -85,7 +85,7 @@
     )
   )
 
-  (property "GIT_VERSION" "1.0.5")
+  (property "GIT_VERSION" "1.0.6")
 
   (net 0 "")
   (net 1 "GND")
