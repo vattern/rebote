@@ -55,7 +55,16 @@ jobs:
         find: "\"GIT_VERSION\" \"${{ steps.previoustag.outputs.tag }}\""
         replace: "\"GIT_VERSION\" \"${{ steps.semvers.outputs.patch }}\""
         regex: false
-        include: "**kicad_pro"
+        include: "**kicad_pcb"
+
+    - name: Find and Replace README
+      uses: jacobtomlinson/gha-find-replace@v3
+      with:
+        find: "${{ steps.previoustag.outputs.tag }}"
+        replace: "${{ steps.semvers.outputs.patch }}"
+        regex: false
+        include: "README.md"
+
     - name: Commit files
       run: |
         git config --local user.email "bot@tokas.co.uk"

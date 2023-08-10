@@ -27,20 +27,28 @@ filters:
 
 outputs:
 
+ - name: 'create diffs'
+   comment: "Create diff PDF"
+   type: diff
+   dir: .
 
+ - name: 'render 3d'
+   comment: "Render 3d "
+   type: render_3d
+   dir: .
 
-  - name: 'export-blender'
-    comment: "Export 3d render"
-    type: blender_export
-    dir: .
-    options:
-      render_options:
-        samples: 100
-      point_of_view:
-        rotate_x: 30
-        rotate_z: 30
-      outputs:
-        type: render
+  # - name: 'export-blender'
+  #   comment: "Export 3d render"
+  #   type: blender_export
+  #   dir: .
+  #   options:
+  #     render_options:
+  #       samples: 100
+  #     point_of_view:
+  #       rotate_x: 30
+  #       rotate_z: 30
+  #     outputs:
+  #       type: render
 
   # - name: export_pcb
   #   comment: 'Copy 3D models'
