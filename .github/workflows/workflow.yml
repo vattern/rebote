@@ -44,6 +44,7 @@ jobs:
         find: "\"GIT_VERSION\": \"${{ steps.previoustag.outputs.tag }}\""
         replace: "\"GIT_VERSION\": \"${{ steps.semvers.outputs.patch }}\""
         regex: false
+        include: "**kicad_pro"
     # This is a KiCad 5 example, KiCad 6 uses v2_k6
     - uses: INTI-CMNB/KiBot@v2_k7
       with:

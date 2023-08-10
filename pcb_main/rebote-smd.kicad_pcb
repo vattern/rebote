@@ -7,7 +7,7 @@
   (paper "A4")
   (title_block
     (date "2023-08-08")
-    (rev "1.0")
+    (rev "${GIT_VERSION}")
   )
 
   (layers
@@ -85,7 +85,7 @@
     )
   )
 
-  (property "GIT_VERSION" "v0.0.1")
+  (property "GIT_VERSION" "1.0.0")
 
   (net 0 "")
   (net 1 "GND")
@@ -22947,7 +22947,7 @@
       (stroke (width 0.1) (type default)) (layer "Dwgs.User") (tstamp 940da8b9-1636-4c3a-978e-de5da0501deb))
     (fp_rect (start -7.25 -9.75) (end 7 -4.75)
       (stroke (width 0.1) (type default)) (fill none) (layer "Dwgs.User") (tstamp 20b21e1e-c4d7-4660-9683-874c39be4ab5))
-    (fp_arc (start -8.503675 0) (mid 8.502756 -0.125014) (end -8.499999 0.25)
+    (fp_arc (start -8.503675 0) (mid 8.502756 -0.125036) (end -8.499999 0.25)
       (stroke (width 0.1) (type default)) (layer "Dwgs.User") (tstamp 0e9d2178-7e03-47c5-b15d-3b489ba8ee3d))
     (pad "1" thru_hole circle (at -5 -16.5) (size 1.524 1.524) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp b602a503-1356-4789-9c79-86defb9a1a0a))
@@ -23013,7 +23013,7 @@
       (stroke (width 0.1) (type default)) (layer "Dwgs.User") (tstamp ff468f96-c46d-428e-9e94-42df8527f39b))
     (fp_rect (start -7.25 -9.75) (end 7 -4.75)
       (stroke (width 0.1) (type default)) (fill none) (layer "Dwgs.User") (tstamp c399d851-dad3-4256-aa23-99fdece3e11e))
-    (fp_arc (start -8.503675 0) (mid 8.502756 -0.125014) (end -8.499999 0.25)
+    (fp_arc (start -8.503675 0) (mid 8.502756 -0.125036) (end -8.499999 0.25)
       (stroke (width 0.1) (type default)) (layer "Dwgs.User") (tstamp 61617de7-12ea-4740-af2f-5f6626a3e085))
     (pad "1" thru_hole circle (at -5 -16.5) (size 1.524 1.524) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp 73c4e2a1-e3dc-47a2-b757-8996959bf532))
@@ -23079,7 +23079,7 @@
       (stroke (width 0.1) (type default)) (layer "Dwgs.User") (tstamp 0bfbd390-27b0-4bd9-ac90-8b6ad7336c16))
     (fp_rect (start -7.25 -9.75) (end 7 -4.75)
       (stroke (width 0.1) (type default)) (fill none) (layer "Dwgs.User") (tstamp 33c4f070-165b-43e2-bc9b-229e17134cdf))
-    (fp_arc (start -8.503675 0) (mid 8.502756 -0.125014) (end -8.499999 0.25)
+    (fp_arc (start -8.503675 0) (mid 8.502756 -0.125036) (end -8.499999 0.25)
       (stroke (width 0.1) (type default)) (layer "Dwgs.User") (tstamp 7208d155-3cc5-47eb-8616-b75e9ae2a647))
     (pad "1" thru_hole circle (at -5 -16.5) (size 1.524 1.524) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "1") (pintype "passive") (tstamp 51394ac3-f48f-40a4-966f-757e6780f19f))
