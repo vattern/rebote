@@ -145,10 +145,4 @@ jobs:
         git config --local user.name "BOT"
         git tag -a ${{ steps.semvers.outputs.patch }} -m "Tag ${{ steps.semvers.outputs.patch }} [ci skip]"
         git push origin ${{ steps.semvers.outputs.patch }}
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.TOKEN }}
-        branch: ${{ github.ref }}
-        
+        git push
