@@ -33,9 +33,9 @@ jobs:
         # optional - prefix to output defined in config
         dir: pcb_main/Fabrication
         # optional - schematic file
-        schema: 'pcb_main/GreenBean.kicad_sch'
+        schema: 'pcb_main/rebote-smd.kicad_sch'
         # optional - PCB design file
-        board: 'pcb_main/GreenBean.kicad_pcb'
+        board: 'pcb_main/rebote-smd.kicad_pcb'
 
     - name: Retrieve results
       if: ${{ always() }}
@@ -87,5 +87,5 @@ jobs:
         branch: main
         folder: pcb_main/Fabrication
         target-folder: outputs
-        repository-name: vattern/pedal-template
+        repository-name: vattern/rebote
         token: ${{ secrets.TOKEN }}

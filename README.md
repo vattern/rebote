@@ -1,4 +1,4 @@
 # pedal-template
-![image info](./outputs/GreenBean-3D_blender_top.png)
+![image info](./outputs/rebote-smd-3D_blender_top.png)
 
-Schematic is [here](outputs/GreenBean-schematic_.svg).
+![image schematic](outputs/rebote-smd-schematic_.svg).

@@ -52,6 +52,9 @@ outputs:
   #         dest: 3d_models+
   #         save_pcb: true
 
+  - name: 'make_stencil'
+    type: stencil_3d
+
 
   - name: 'print_sch'
     comment: "Print schematic (PDF)"
