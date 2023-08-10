@@ -51,11 +51,11 @@ jobs:
         include: "**kicad_pro"
 
     - name: Commit files
-        run: |
-          git config --local user.email "bot@tokas.co.uk"
-          git config --local user.name "BOT"
-          git commit -a -m "Add changes"
-        
+      run: |
+        git config --local user.email "bot@tokas.co.uk"
+        git config --local user.name "BOT"
+        git commit -a -m "Add changes"
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
