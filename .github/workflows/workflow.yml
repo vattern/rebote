@@ -143,6 +143,7 @@ jobs:
       run: |
         git config --local user.email "bot@tokas.co.uk"
         git config --local user.name "BOT"
+        git pull
         git tag -a ${{ steps.semvers.outputs.patch }} -m "Tag ${{ steps.semvers.outputs.patch }} [ci skip]"
         git push origin ${{ steps.semvers.outputs.patch }}
         git push
