@@ -1021,7 +1021,7 @@
     (pin "1" (uuid 87728a30-1817-419e-a8e2-d835750a5a56))
     (pin "2" (uuid 7ec48f27-21b3-4d9b-abf7-84ee0027ae57))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "R1") (unit 1)
         )
@@ -1050,7 +1050,7 @@
     (pin "1" (uuid 28ab934f-bf7e-476b-8c5a-c0680a94b654))
     (pin "2" (uuid 654ad17e-f9cd-49dc-b0fd-a2ecd1cdc09b))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "R2") (unit 1)
         )
@@ -1083,7 +1083,7 @@
     (pin "T" (uuid 4b7682e7-25e8-4c32-83ac-39dddd145877))
     (pin "TN" (uuid 98ab9d64-5338-4c0c-b09c-780e6cc4e4c1))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669/d03f6ae9-899f-405c-bdc0-06dd67de7727"
           (reference "J3") (unit 1)
         )
@@ -1109,7 +1109,7 @@
     (pin "1" (uuid 2d766522-ff1d-4af4-8b4a-2eb163c17a47))
     (pin "2" (uuid d8a4b03c-8a75-4de8-ab36-c9313e6fe19a))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "C1") (unit 1)
         )
@@ -1140,7 +1140,7 @@
     (pin "3" (uuid 20b5eac5-a3fc-464e-a4ee-a5abd078a23e))
     (pin "4" (uuid c1419d09-f286-497e-a10d-1b587d3a77fa))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "JOVGI2") (unit 1)
         )
@@ -1168,7 +1168,7 @@
     )
     (pin "1" (uuid 703fbe48-7ab4-49f6-9f73-3a5ee310e599))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR05") (unit 1)
         )
@@ -1204,7 +1204,7 @@
     (pin "6" (uuid a4797bdf-ae9e-4937-908e-43dbf4eb0ccc))
     (pin "9" (uuid 36bec5a5-470a-429c-8e05-aedaa2f61d24))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "SW1") (unit 3)
         )
@@ -1232,7 +1232,7 @@
     )
     (pin "1" (uuid eee57892-24fe-4d30-bea8-131910981e93))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR014") (unit 1)
         )
@@ -1260,7 +1260,7 @@
     )
     (pin "1" (uuid dab7c6b9-26da-48da-bd5a-021d355ac9ef))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR011") (unit 1)
         )
@@ -1288,7 +1288,7 @@
     )
     (pin "1" (uuid 37bf1631-d6b0-461e-9ff7-57174d7aa41f))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR08") (unit 1)
         )
@@ -1315,7 +1315,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "N1") (unit 1)
         )
@@ -1343,7 +1343,7 @@
     )
     (pin "1" (uuid d05d9161-44f9-434c-96a1-085cfa5af3e4))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR015") (unit 1)
         )
@@ -1371,7 +1371,7 @@
     )
     (pin "1" (uuid 05b7ad1a-f0d6-473a-8cca-7d6cb3a0bfea))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR01") (unit 1)
         )
@@ -1400,7 +1400,7 @@
     (pin "1" (uuid aede6faa-0dda-42e6-89a4-10f6f5b2b42f))
     (pin "2" (uuid 8a867757-a016-4cab-b6f6-f8f25db354ac))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "J1") (unit 1)
         )
@@ -1428,7 +1428,7 @@
     )
     (pin "1" (uuid 55832b43-c108-437c-aeeb-82251204faf5))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR06") (unit 1)
         )
@@ -1457,7 +1457,7 @@
     (pin "1" (uuid 9f9c5132-b614-4509-b2f0-239739ded648))
     (pin "2" (uuid 34cd6985-c4e9-44c4-af94-25632812f549))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "R3") (unit 1)
         )
@@ -1485,7 +1485,7 @@
     )
     (pin "1" (uuid 2bccbdd0-ff41-43f9-99f1-3bd91d8d1283))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR04") (unit 1)
         )
@@ -1521,7 +1521,7 @@
     (pin "6" (uuid 18ab780c-31c6-4fa5-a817-2e8eaeec7c2b))
     (pin "9" (uuid 697a82c3-f805-412f-860c-17a8a5daa8f7))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "SW1") (unit 1)
         )
@@ -1549,7 +1549,7 @@
     )
     (pin "1" (uuid d4e5f667-59f1-4ab8-946c-b452f68477aa))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR013") (unit 1)
         )
@@ -1577,7 +1577,7 @@
     )
     (pin "1" (uuid 4e4d0c56-2de1-433c-8053-e550c5bf3b00))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR010") (unit 1)
         )
@@ -1605,7 +1605,7 @@
     )
     (pin "1" (uuid 90fa5613-77d1-4de0-9e80-3a6a89a8981a))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR09") (unit 1)
         )
@@ -1633,7 +1633,7 @@
     )
     (pin "1" (uuid 0404ce4c-a094-4d03-949e-4276014780b3))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR012") (unit 1)
         )
@@ -1666,7 +1666,7 @@
     (pin "T" (uuid 29b07eae-9d9e-4827-a38f-d31be8791b45))
     (pin "TN" (uuid f31b4339-1e64-480f-9b6c-b1583e638c30))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669/d03f6ae9-899f-405c-bdc0-06dd67de7727"
           (reference "J2") (unit 1)
         )
@@ -1691,7 +1691,7 @@
     )
     (pin "1" (uuid ed3a188e-00ac-4d3b-b8f0-c7833f8bcd05))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR07") (unit 1)
         )
@@ -1719,7 +1719,7 @@
     )
     (pin "1" (uuid e3389ffb-7436-425f-aa63-bc687a1bbb2c))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR03") (unit 1)
         )
@@ -1748,7 +1748,7 @@
     (pin "1" (uuid 828a771e-4410-4f17-b668-2d7f62a9f82e))
     (pin "2" (uuid 1baa1187-3aee-497d-85b5-1b60a94f9d59))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "J4") (unit 1)
         )
@@ -1777,7 +1777,7 @@
     (pin "1" (uuid df5e47e8-9cfe-4000-9696-1fcacc72a434))
     (pin "2" (uuid 766f1bbf-4a9b-4054-8b09-7d3b634affae))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "D1") (unit 1)
         )
@@ -1806,7 +1806,7 @@
     (pin "1" (uuid 645c7b68-5e04-4a89-a662-ff8c6c1d80be))
     (pin "2" (uuid 3db91cfe-728c-4b46-b7eb-d4ae8a25523d))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "C2") (unit 1)
         )
@@ -1834,7 +1834,7 @@
     )
     (pin "1" (uuid 6221dd45-114a-49ac-ba09-39a7914ae931))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "#PWR02") (unit 1)
         )
@@ -1870,7 +1870,7 @@
     (pin "6" (uuid c4debabe-9abe-4828-a676-c7f4603deaec))
     (pin "9" (uuid 40857674-11f7-4b36-8d4d-ad6b8123209a))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "SW1") (unit 2)
         )
@@ -1901,7 +1901,7 @@
     (pin "3" (uuid d81efcb1-ce06-4774-8f2f-c4e6ca6c4efa))
     (pin "4" (uuid 2a37f4da-5988-4935-95bb-fd26dfc13ecf))
     (instances
-      (project "GreenBean"
+      (project "rebote-smd"
         (path "/f9239c6c-c810-4be4-9f5e-4f49867b2669"
           (reference "JOVGI1") (unit 1)
         )
@@ -1912,4 +1912,3 @@
     )
   )
 )
-
