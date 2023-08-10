@@ -25,6 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.head_ref }}
+        fetch-depth: 0
+        token: ${{ secrets.TOKEN }}
 
     - name: 'Get Previous tag'
       id: previoustag
@@ -47,10 +51,11 @@ jobs:
         include: "**kicad_pro"
 
     - name: Push changes
-      uses: ad-m/github-push-action@v0.6.0
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.TOKEN }}
         branch: ${{ github.ref }}
+
     # This is a KiCad 5 example, KiCad 6 uses v2_k6
     - uses: INTI-CMNB/KiBot@v2_k7
       with:
@@ -134,4 +139,4 @@ jobs:
       with:
         title: ${{ steps.semvers.outputs.patch }}
       env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        GITHUB_TOKEN: "${{ secrets.TOKEN }}"
