@@ -23,8 +23,8 @@ Row,Reference,Part,Value,P/N,Manufacturer,Footprint,Description,Quantity Per PCB
 Project info:
 Schematic:,rebote-smd
 Variant:,default
-Revision:,
-Date:,2023-08-10_11-01-44
+Revision:,1.0.1
+Date:,2023-08-10_14-59-16
 KiCad Version:,7.0.5.1-1-g8f565ef7f0-dirty-deb11
 Statistics:
 Component Groups:,16
