@@ -69,7 +69,7 @@ jobs:
       run: |
         git config --local user.email "bot@tokas.co.uk"
         git config --local user.name "BOT"
-        git commit -a -m "Add changes"
+        git commit -a -m "Add changes [ci skip]"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
@@ -138,8 +138,17 @@ jobs:
         repository-name: vattern/rebote
         token: ${{ secrets.TOKEN }}
 
-    - name: Tag snapshot
-      uses: tvdias/github-tagger@v0.0.1
+
+    - name: Commit files
+      run: |
+        git config --local user.email "bot@tokas.co.uk"
+        git config --local user.name "BOT"
+        git tag -a ${{ steps.semvers.outputs.patch }} -m "Tag ${{ steps.semvers.outputs.patch }} [ci skip]"
+        git push origin ${{ steps.semvers.outputs.patch }}
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        repo-token: ${{ secrets.TOKEN }}
-        tag: ${{ steps.semvers.outputs.patch }}
+        github_token: ${{ secrets.TOKEN }}
+        branch: ${{ github.ref }}
+        
